@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
-import Header from './header.jsx';
+import Chart from './chart.jsx';
 
 const mapStateToProps = ({ data }) => ({
-  query: data.query
+  searchQuery: data.searchQuery
 });
 
 export default connect(
   mapStateToProps
-)(Header);
+)(Chart);

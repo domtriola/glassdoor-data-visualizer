@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Header extends React.Component {
+class DynamicMenu extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -8,11 +8,10 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <h1>Glassdoor Data Visualizer</h1>
-        <p>{this.props.query}</p>
+        dynamic_menu
       </div>
     );
   }
 }
 
-export default Header;
+export default DynamicMenu;

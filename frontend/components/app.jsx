@@ -1,11 +1,13 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-import HeaderContainer from './header/header_container';
+import MenuContainer from './menu/menu_container';
+import ChartContainer from './chart/chart_container';
 
 const App = () => (
   <div>
-    <HeaderContainer />
+    <MenuContainer />
+    <ChartContainer />
   </div>
 );
 
