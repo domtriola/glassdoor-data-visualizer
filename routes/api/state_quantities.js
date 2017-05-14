@@ -13,6 +13,7 @@ router.get('/', (req, res, next) => {
       `&userip=0.0.0.0&useragent=&format=json&v=1&action=jobs-stats` +
       `&q=${params.q}` +
       `&fromAge=${params.fromAge}` +
+      `&jc=29` +
       `&returnStates=true` +
       `&admLevelRequested=1`,
     json: true
