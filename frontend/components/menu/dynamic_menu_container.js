@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import FixedMenu from './fixed_menu.jsx';
+import DynamicMenu from './dynamic_menu.jsx';
 import { updateSearchQuery } from '../../actions/data_actions';
 
 const mapStateToProps = ({ data }) => ({
@@ -13,4 +13,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(FixedMenu);
+)(DynamicMenu);

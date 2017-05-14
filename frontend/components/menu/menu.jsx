@@ -1,7 +1,7 @@
 import React from 'react';
 
-import FixedMenuContainer from './fixed_menu_container';
-import DynamicMenu from './dynamic_menu.jsx';
+import DynamicMenuContainer from './dynamic_menu_container';
+import FixedMenu from './fixed_menu.jsx';
 
 class Menu extends React.Component {
   constructor(props) {
@@ -12,9 +12,9 @@ class Menu extends React.Component {
 
   renderMenu() {
     if (this.props.displayType === "fixed")
-      return <FixedMenuContainer />;
+      return <FixedMenu />;
     else
-      return <DynamicMenu />;
+      return <DynamicMenuContainer />;
   }
 
   render() {
