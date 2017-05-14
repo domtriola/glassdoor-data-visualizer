@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "heroku-postbuild": "webpack"
   },
   "dependencies": {
     "babel-core": "^6.24.1",
@@ -26,5 +27,9 @@
     "redux-thunk": "^2.2.0",
     "serve-favicon": "~2.4.2",
     "webpack": "^2.5.1"
+  },
+  "engines": {
+    "node": "6.2.1",
+    "npm": "3.9.3"
   }
 }
