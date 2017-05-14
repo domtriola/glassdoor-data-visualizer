@@ -1,4 +1,5 @@
 import React from 'react';
+import { esc } from '../../util/sanitize';
 
 class DynamicMenu extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class DynamicMenu extends React.Component {
   handleChange(e) {
     e.preventDefault();
 
-    this.setState({ searchQuery: e.target.value.toLowerCase() });
+    this.setState({ searchQuery: esc(e.target.value.toLowerCase()) });
   }
 
   handleSubmit() {
