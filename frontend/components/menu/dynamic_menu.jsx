@@ -18,6 +18,7 @@ class DynamicMenu extends React.Component {
 
   handleSubmit() {
     this.props.updateSearchQuery(this.state.searchQuery);
+    this.props.fetchData({ url: "/api/state-quantities" });
   }
 
   render() {
