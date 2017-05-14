@@ -18,6 +18,7 @@ router.get('/', (req, res, next) => {
       `&action=jobs-stats` +
       `&q=${encodeURIComponent(params.q)}` +
       `&fromAge=${encodeURIComponent(params.fromAge)}` +
+      `&jc=29` +
       `&returnStates=true` +
       `&admLevelRequested=1`,
     headers: {
